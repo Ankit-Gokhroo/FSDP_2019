@@ -1,0 +1,49 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jun 11 15:52:56 2019
+
+@author: Ankit Gokhroo
+"""
+
+"""
+
+Code Challenge
+  Name: 
+    Student and Faculty JSON
+  Filename: 
+    student.json
+    faculty.json
+  Problem Statement:
+    Create a student and Faculty JSON object and get it verified using jsonlint.com
+    Write a JSON for faculty profile. 
+    The JSON should have profile of minimum 2 faculty members. 
+    The profile for each faculty should include below information atleast:
+
+        First Name
+        Last Name
+        Photo (Just a random url)
+        Department 
+        Research Areas (can be multiple)
+        Contact Details (should include phone number and email id and can have multiple )
+   Hint:
+       www.jsonlint.com
+       
+"""
+import json
+json_string="""{"faculty1":{"fname":"rahul",
+                         "lname":"jain",
+                         "department":"cse",
+                         "researchareas":[{"c":"pointers","java":"arrays"}],
+                         "contact":[{"mobile":"2345","emailid":"sas.om"}]},
+          "faculty2":{"fname":"amit",
+                      "lname":"sharma",
+                      "department":"ece",
+                      "researchareas":[{"iot":"raspberrrypi"}],
+                      "contact":[{"mobile":"2348","emailid":"abs.om"}]}}"""
+
+json_string1="""{"student":{"fname":"ankit",
+                          "lname":"jain",
+                          "hobbies":["cricket","chess"],
+                          "contact":{"mobile":"3345","mail":"sss.cm"}}}"""
+my_data = json.loads(json_string)
+my_data1 = json.loads(json_string1)

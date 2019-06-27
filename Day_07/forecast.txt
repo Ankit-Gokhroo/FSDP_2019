@@ -1,0 +1,39 @@
+["alwar", 38.30000000000001]
+["bharatpur", 22.399999999999977]
+["bhilwara", 34.80000000000001]
+["jaipur", 35.14999999999998]
+["bijainagar", 35.60000000000002]
+["mathura", 41.19999999999999]
+["lucknow", 33.14999999999998]
+["agra", 41.89999999999998]
+["kanpur", 33.14999999999998]
+["alwar", 38.30000000000001]
+["bharatpur", 22.399999999999977]
+["bhilwara", 34.80000000000001]
+["jaipur", 35.14999999999998]
+["bijainagar", 35.60000000000002]
+["alwar", 37.96100000000001]
+["bharatpur", 21.86099999999999]
+["bhilwara", 33.661]
+["jaipur", 34.14999999999998]
+["bijainagar", 33.86099999999999]
+["alwar", 37.96100000000001]
+["bharatpur", 21.86099999999999]
+["bhilwara", 33.661]
+["jaipur", 34.14999999999998]
+["bijainagar", 33.86099999999999]
+{"coord": {"lon": 76.61, "lat": 27.56}, "weather": [{"id": 802, "main": "Clouds", "description": "scattered clouds", "icon": "03n"}], "base": "stations", "main": {"temp": 310.961, "pressure": 996.26, "humidity": 20, "temp_min": 310.961, "temp_max": 310.961, "sea_level": 996.26, "grnd_level": 954.56}, "wind": {"speed": 5.05, "deg": 251.805}, "clouds": {"all": 37}, "dt": 1560282900, "sys": {"message": 0.0043, "country": "IN", "sunrise": 1560297462, "sunset": 1560347344}, "timezone": 19800, "id": 1278946, "name": "Alwar", "cod": 200}
+{"coord": {"lon": 84.43, "lat": 27.68}, "weather": [{"id": 800, "main": "Clear", "description": "clear sky", "icon": "01n"}], "base": "stations", "main": {"temp": 294.861, "pressure": 1006.52, "humidity": 70, "temp_min": 294.861, "temp_max": 294.861, "sea_level": 1006.52, "grnd_level": 915.9}, "wind": {"speed": 1.46, "deg": 329.701}, "clouds": {"all": 1}, "dt": 1560282901, "sys": {"message": 0.0056, "country": "NP", "sunrise": 1560295569, "sunset": 1560345483}, "timezone": 20700, "id": 1283613, "name": "Bharatpur", "cod": 200}
+{"coord": {"lon": 74.64, "lat": 25.35}, "weather": [{"id": 500, "main": "Rain", "description": "light rain", "icon": "10n"}], "base": "stations", "main": {"temp": 306.661, "pressure": 997.72, "humidity": 28, "temp_min": 306.661, "temp_max": 306.661, "sea_level": 997.72, "grnd_level": 947.28}, "wind": {"speed": 2.98, "deg": 266.982}, "rain": {"3h": 0.125}, "clouds": {"all": 0}, "dt": 1560282757, "sys": {"message": 0.0045, "country": "IN", "sunrise": 1560298230, "sunset": 1560347522}, "timezone": 19800, "id": 1275960, "name": "Bhilwara", "cod": 200}
+{"coord": {"lon": 75.82, "lat": 26.92}, "weather": [{"id": 721, "main": "Haze", "description": "haze", "icon": "50n"}], "base": "stations", "main": {"temp": 307.15, "pressure": 1000, "humidity": 30, "temp_min": 307.15, "temp_max": 307.15}, "visibility": 2500, "wind": {"speed": 1}, "clouds": {"all": 20}, "dt": 1560282895, "sys": {"type": 1, "id": 9170, "message": 0.005, "country": "IN", "sunrise": 1560297738, "sunset": 1560347447}, "timezone": 19800, "id": 1269515, "name": "Jaipur", "cod": 200}
+{"coord": {"lon": 74.64, "lat": 25.9}, "weather": [{"id": 500, "main": "Rain", "description": "light rain", "icon": "10n"}], "base": "stations", "main": {"temp": 306.861, "pressure": 997.63, "humidity": 28, "temp_min": 306.861, "temp_max": 306.861, "sea_level": 997.63, "grnd_level": 948.77}, "wind": {"speed": 3.61, "deg": 277.216}, "rain": {"3h": 0.125}, "clouds": {"all": 0}, "dt": 1560282905, "sys": {"message": 0.0059, "country": "IN", "sunrise": 1560298158, "sunset": 1560347594}, "timezone": 19800, "id": 1270763, "name": "Bijainagar", "cod": 200}
+37.96100000000001
+21.86099999999999
+33.661
+34.14999999999998
+33.86099999999999
+["alwar", 43.339]
+["bharatpur", 37.03899999999999]
+["bhilwara", 37.63900000000001]
+["jaipur", 40.14999999999998]
+["bijainagar", 35.53899999999999]
