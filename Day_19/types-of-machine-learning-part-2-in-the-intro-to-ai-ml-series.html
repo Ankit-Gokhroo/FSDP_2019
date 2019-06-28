@@ -1,0 +1,948 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://mapr.com/blog/",
+        "name": "Blog"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://mapr.com/blog/machine-learning/",
+        "name": "Machine Learning"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://mapr.com/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/",
+        "name": "Types of Machine Learning – Part #2 in the Intro to AI/ML Series",
+        "image": "https://mapr.com/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image7.jpg"
+      }
+    }
+  ]
+}
+</script>
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<script async src="/assets/js/loadGTMold.js"></script>
+		<script async src="/assets/js/loadGTMnew.js"></script>
+		<title>Types of Machine Learning – Part #2 in the Intro to AI/ML Series | MapR</title>
+		    <meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		    <!-- <meta http-equiv="Content-Security-Policy" content="default-src https:"> -->
+		    <meta name="description" content="">
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <link rel="canonical" href="https://mapr.com/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/">
+		    <meta name="twitter:image" content="https://mapr.com/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image7.jpg">
+		    <meta property="og:image" content="https://mapr.com/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image7.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image12.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image8.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image4.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image9.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image10.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image13.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image2.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image11.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image1.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image5.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image14.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image6.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image15.jpg">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image16.png">
+		    <meta property="og:image" content="https://mapr.com/en/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/assets/image3.jpg">
+		    <!-- start : System Icons -->
+		    <link rel="shortcut icon" href="/assets/images/system/favicon.ico" type="image/ico">
+		    <link rel="icon" href="/assets/images/system/favicon.ico" type="image/ico">
+		    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/system/apple-touch-icon.png">
+		    <link rel="icon" type="image/png" href="/assets/images/system/favicon-32x32.png" sizes="32x32">
+		    <link rel="icon" type="image/png" href="/assets/images/system/favicon-16x16.png" sizes="16x16">
+		    <link rel="manifest" href="/assets/images/system/manifest.json">
+		    <link rel="mask-icon" href="/assets/images/system/safari-pinned-tab.svg" color="#5bbad5">
+		    <meta name="theme-color" content="#ffffff">
+		    <!-- end : System Icons -->
+		
+		    <!--Social Media Icon-->
+		    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		    <!--End Social Media Icon-->
+		
+		
+		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		    <link rel="stylesheet" href="/assets/css/main.css">
+		
+		
+		    <script src="/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		
+		    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+		    <!--Reachforce Cloud code-->
+		    <script type="text/javascript" src="//cdn.reachforce.com/SmartForms.js" data-token="114741"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js" integrity="sha256-1O3BtOwnPyyRzOszK6P+gqaRoXHV6JXj8HkjZmPYhCI=" crossorigin="anonymous"></script>
+		    <!-- <script src="/assets/javascript/mapr-search.js"></script> -->
+		    <script src='https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js'></script>
+		    <!-- <script src="/assets/js/rex.js"></script> -->
+		
+		    <script type='text/javascript' src='//cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js'></script>
+		    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		    <script type="text/javascript">
+		    $(window).on("load", function() {
+		      $('.marquee').marquee({
+		        duration: 17000,
+		        gap: 0,
+		        duplicated: true,
+		        pauseOnHover: true,
+		        startVisible: true
+		      });
+		    });
+		    </script>
+	</head>
+	<body>
+		<!-- Old Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJS58W"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Old Google Tag Manager (noscript) -->
+		<!-- New Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJFL7CH"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End New Google Tag Manager (noscript) -->
+
+		<div id='rex-webinar-banner'></div>
+
+		<header class="mod-1-1-top-nav">
+			<!-- <div id="search_top_mobile">
+				<form action="/search/">
+					<input type="text" id="nav-search-q" placeholder="search" name="q">
+					<input type="hidden" id="nav-search-l" name="l" value="">
+				</form>
+				<button>
+					<img src="/assets/images/icons/icon_microscope.svg" class="icon-microscope" tabindex="1" alt="">
+				</button>
+			</div> -->
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+							<span class="burger-bar"></span>
+							<span class="burger-bar"></span>
+							<span class="burger-bar"></span>
+							<span class="sr-only">Toggle navigation</span>
+						</button>
+						<button style="display:none;" id="navbar_search_mobile"></button>
+						<a class="" href="/">
+							<img src="/assets/images/MapR_logo_red.svg" class="logo-mapr-red" alt="">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse navigation-bar" id="menu">
+						<ul class="nav navbar-nav navbar-right" id="navigation-mainbar">
+							<li class="mainnav"><a id="mainnav-whymapr" class="" href="/why-mapr/">Why MapR?</a></li>
+							<li class="mainnav"><a id="mainnav-products" class="" href="/products/">Products</a></li>
+							<li class="mainnav"><a id="mainnav-services" class="" href="/services/">Services</a></li>
+							<li class="mainnav"><a id="mainnav-solutions" class="" href="/solutions/">Solutions</a></li>
+							<li class="mainnav"><a id="mainnav-customers" class="" href="/customers/">Customers</a></li>
+							<li class="mainnav"><a id="mainnav-resellers" class="" href="/resellers/">Find a Reseller</a></li>
+							<li><a id="mainnav-trymapr" href="/try-mapr/" class="btn-standard">TRY MAPR</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right navigation-bar" id="navbar-topbar">
+							<li class="utilnav"><a id="utilitynav-partners" href="/partners/">Partners</a></li>
+							<li class="utilnav"><a id="utilitynav-support" href="/support/">Support</a></li>
+							<li class="utilnav"><a id="utilitynav-devhub" href="/developer-portal/">Dev-Hub</a></li>
+							<li class="utilnav"><a id="utilitynav-community" href="http://community.mapr.com">Community</a></li>
+							<li class="utilnav"><a id="utilitynav-training" href="/training/">Training</a></li>
+							<li class="utilnav"><a id="utilitynav-blog" href="/blog/">Blog</a></li>
+							<li class="utilnav"><a id="utilitynav-resources" href="/resources/">Resources</a></li>
+							<li class="utilnav"><a href="/user/">My Account</a></li>
+							<!--
+							<li class="utilnav"><a id="utilitynav-dignout" href="/user/" class="signOut">My Account</a></li>
+							<li class="utilnav signedIn"><a id="utilitynav-myaccount" href="#" class="signOut">Logout</a></li>
+							-->
+
+							<li style="display: none;" id="navbar_search">
+								<!-- Begin the search form -->
+								<form style="display: none;" id="nav-search" action="/search/">
+								  <input type="text" autocomplete="off" id="nav-search-q" name="q" placeholder="Search " size="30" />
+								  <input type="hidden" id="nav-search-l" name="l" value="en" />
+								</form>
+								
+								
+								<!-- End the search form -->
+							</li>
+							<li style="display: none;">
+								<img src="/assets/images/icons/icon_microscope.svg" class="icon-microscope search-trigger" tabindex="1" alt="">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+<section class="mod-masthead-subpages" style="background-image: url(/assets/images/backgrounds/bg_why_mapr.png)">
+  <div class="cell-dark">
+    <div class="cell-inner">
+      <h1>Types of Machine Learning – Part #2 in the Intro to AI/ML Series</h1>
+    </div>
+  </div>
+</section>
+
+<section class="mod-1-3-breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <a href="/blog/">Blog</a>
+          <a href="/blog/machine-learning/">Machine Learning</a>
+      <a>Current Post</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.search-bar{
+  max-width: 300px;
+  margin: 0 auto;
+}
+form input, form select, .categories{
+  max-width: 300px;
+  margin: 0 auto;
+}
+</style>
+
+<section class="mod-5-8-3up-light-content-cards-blog bg-grey">
+  <div class="container">
+    <div class="row row-stick">
+      <div class="col-md-9 col-md-push-3 bg-white non-stick">
+
+        <div id="social-container" class="col-md-9">
+          <ul class="icon-list">
+            <li><a class="fa fa-twitter icons" href="http://twitter.com/share?text=Types%20of%20Machine%20Learning%20–%20Part%20%232%20in%20the%20Intro%20to%20AI/ML%20Series&url=https://mapr.com/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/" target="_blank"><p>Share</p></a></li>
+            <li><a class="fa fa-linkedin icons" href="https://www.linkedin.com/shareArticle?mini=true&url=https://mapr.com/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/&title=&summary=&source=" target="_blank"><p>Share</p></a></li>
+            <li><a class="fa fa-facebook icons" href="https://www.facebook.com/sharer/sharer.php?u=https://mapr.com/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/" target="_blank"><p>Share</p></a></li>
+          </ul>
+        </div>
+
+        <div id="contributors-container" class="col-sm-3">
+
+            <h6>Contributed by </h6>
+                                                                                                                                                                                   
+            <div class="media">
+                <div class="media-left">
+                    <div id="/blog/author/saira-kennedy/-container" class="contributor-block">
+                        <a href="/blog/author/saira-kennedy/" class="image-container">
+                            <img src="/blog/author/saira-kennedy/assets/skennedy-sq.jpg" class="media-object">
+                        </a>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <h6 class="media-heading">
+                        <span id="/blog/author/saira-kennedy/-container" class="contributor-block"><a href="/blog/author/saira-kennedy/" class="card-link">Saira Kennedy</a></span>
+                    </h6>
+                </div>
+            </div>
+
+
+                                                            
+            
+
+        </div>
+
+        <div>
+          <p id="read-time" style="font-size: 15px"><strong>12 min read</strong></p>
+        </div>
+
+        <div class="md-content" style="padding-top: 34px;">
+          <p>Based on MapR Academy course, <a href="/training/on-demand/bus-introduction-to-artificial-intelligence-and-machine-learning/">BUS Introduction to Artificial Intelligence and Machine Learning</a></p>
+<p>In this post – second in the Intro to AI/ML Series – we discuss the different methods of machine learning and some of the most common algorithms available for your projects. <a href="/blog/artificial-intelligence-and-machine-learning-what-are-they-and-why-are-they-important/">Read the first blog in this series here</a>.</p>
+<script src="/assets/html/includeHTML.js"></script>
+<div w3-include-html="/assets/html/training/in-blog_training-busaiml-ml/index.html"></div>
+<script>includeHTML();</script>
+
+<p><img src="assets/image12.jpg" alt=""></p>
+<h2 id="types-of-machine-learning">Types of Machine Learning</h2>
+<p>There are a few different types of machine learning, but they generally fall into these main groups. Supervised and unsupervised learning are the primary learning types, along with semi-supervised learning.</p>
+<p><img src="assets/image8.jpg" alt=""></p>
+<p>Other methods sit in the middle or outskirts of these methodologies, such as reinforcement learning, which describes a machine that creates a cyclical learning cycle as it continuously trains itself from its own results. These results are then fed back into itself as input data. We won&#39;t be going into much detail on these other techniques, but further information can be found online.</p>
+<p>First, let&#39;s understand what differentiates each of these learning types from each other and how they work.</p>
+<h2 id="supervised-learning-defined">Supervised Learning: Defined</h2>
+<p>Supervised learning uses labeled data to train machines to learn the relationships between given inputs and outputs.</p>
+<p><img src="assets/image4.jpg" alt=""></p>
+<p>A label is a known description given to objects in the data, which trains the machine on what to look for. Labels also provide the structure of the algorithm output, as any result must be one of these labels. Therefore, you can think of labels as a schema, defining the possible output that we want the machine to look for.</p>
+<p>Think of supervised learning as the algorithm to use when data scientists have labeled input data and when the type of behavior to predict is known. We want the machine to learn the patterns used to classify this data and apply those patterns to classify new data.</p>
+<h3 id="how-supervised-learning-works">How Supervised Learning Works</h3>
+<ul>
+<li>First, labeled or classified data is loaded into the system. The preparation of labeled data makes this step the most time-consuming, as it is often done by a human trainer.</li>
+<li>The model is trained and connections to inputs and outputs are made.</li>
+<li>As new data is introduced, the algorithm is applied.</li>
+<li>Output is categorized data.</li>
+</ul>
+<p><img src="assets/image9.jpg" alt=""></p>
+<p>In the previous post, where we provided the cat example on labeled data, the trained labels include ears, nose, tail, paws, and cat, which the algorithm then applies to presented data, in this case an image of a cat, and returns the results of known output as &quot;cat,&quot; yes.</p>
+<p><img src="assets/image10.jpg" alt=""></p>
+<h3 id="pros-and-cons-of-supervised-learning">Pros and Cons of Supervised Learning</h3>
+<p>Supervised learning always has a clear objective and can be easily measured for accuracy. The training of the machine is also tightly controlled, which leads to very specific behavioral outcomes.</p>
+<p>On the downside, it is often very labor-intensive, as all data needs to be labeled before the model is trained, which can take hundreds of hours of specialized human effort. The costs can become astronomical. This creates an overall slower training process and may also limit the data that it can work with.</p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Very clear objective</td>
+<td>Often labor-intensive</td>
+</tr>
+<tr>
+<td>Easy to measure accuracy</td>
+<td>Limited data to work with</td>
+</tr>
+<tr>
+<td>Controlled training</td>
+<td>Limited insights</td>
+</tr>
+</tbody>
+</table>
+<p>Finally, insights may be more limited, as the predicted behavior is described in advance. There is no freedom for the machine to explore other possibilities, as we will see with unsupervised learning.</p>
+<p>In supervised learning, there are primarily two categories of algorithms: classification and regression.</p>
+<p>A classification algorithm organizes input data as belonging to one of several predefined classes. This algorithm is the most useful for providing categorical results that fit within the predefined labels. It is very effective with well-calculated if-then rules and distinguishes one class of objects from another.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Algorithm or Task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supervised</td>
+<td>Classification (used to predict a categorical result)</td>
+</tr>
+<tr>
+<td>Supervised</td>
+<td>Regression (used to predict the output value given the input value)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="supervised-algorithms">Supervised Algorithms</h3>
+<h4 id="classification-used-to-predict-a-categorical-result">Classification: Used to predict a categorical result</h4>
+<p>Some common use cases for classification algorithms include credit card fraud detection and email spam detection, both of which are binary classification problems, meaning there are only two possible output values. Data is labeled, for example, as fraud/non-fraud or spam/non-spam.</p>
+<p>Generally, if the question we are asking of a model is open-ended or if the potential answers are not categorical, then we aren&#39;t dealing with a classification problem, but more likely a regression one.</p>
+<p><img src="assets/image13.jpg" alt=""></p>
+<p>A regression algorithm attempts to predict the output value given the input value. Regression problems are predictive of a continuous numerical, as opposed to categorical, result.</p>
+<p>Think of this continuous value as a range or average, something that is estimating the relationship between variables.</p>
+<h4 id="regression-used-to-predict-the-output-value-given-the-input-value">Regression: Used to predict the output value given the input value</h4>
+<p>For example, this type of algorithm can be used to determine how profitable a credit card model is. It is also used to predict customer or employee churn models.</p>
+<p><img src="assets/image2.jpg" alt=""></p>
+<p>Regression algorithms determine the strength of correlation between two attributes, allowing you to find a predictive range of likelihood.</p>
+<h3 id="supervised-algorithms-table">Supervised Algorithms Table</h3>
+<p>This table depicts some of the most common algorithms used with supervised learning types. It is important to understand that many machine learning data models will use more than one, and sometimes many, different algorithms for a project.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Algorithm or Task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Classification</td>
+<td>Naïve Bayes</td>
+</tr>
+<tr>
+<td>Classification</td>
+<td>Logistic Regression</td>
+</tr>
+<tr>
+<td>Classification</td>
+<td>Support Vector Machines (SVMs)</td>
+</tr>
+<tr>
+<td>Regression</td>
+<td>Linear Regression</td>
+</tr>
+<tr>
+<td>Both</td>
+<td>Decision Trees/Random Forest</td>
+</tr>
+<tr>
+<td>Both</td>
+<td><em>k</em>-Nearest Neighbors (<em>k</em>-NN)</td>
+</tr>
+<tr>
+<td>Both</td>
+<td>Gradient Boosting Algorithms</td>
+</tr>
+</tbody>
+</table>
+<h2 id="unsupervised-learning-defined">Unsupervised Learning: Defined</h2>
+<p>While supervised learning involves having labeled data to find input-output relationships during the training phase, unsupervised learning has no knowledge of the output label. In this type of ML, the machine finds groups and patterns in the data on its own, and there is no specific outcome or target to predict.</p>
+<p>Think of unsupervised learning as the algorithm to use when we don&#39;t know how to classify the data and we want the machine to classify or group it for us.</p>
+<p><img src="assets/image11.jpg" alt=""></p>
+<h3 id="how-unsupervised-learning-works">How Unsupervised Learning Works</h3>
+<p>Here are the steps of how the unsupervised learning algorithm works:</p>
+<ul>
+<li>First, unlabeled raw data is loaded into the system.</li>
+<li>Next, the algorithm analyzes the data.</li>
+<li>It looks for patterns on its own.</li>
+<li>Then, it identifies and groups patterns of behavior and provides output results.</li>
+</ul>
+<p><img src="assets/image1.jpg" alt=""></p>
+<h3 id="pros-and-cons-of-unsupervised-learning">Pros and Cons of Unsupervised Learning</h3>
+<p>Compared to supervised learning, unsupervised learning projects are much faster to implement, as no data labeling is required. In this regard, it uses fewer human resources. It also interprets data on its own and has the potential to provide unique, disruptive insights for a business to consider.</p>
+<p>However, unsupervised learning can be difficult to measure for accuracy because there is no expected result to compare it to. It can require more experimentation and tuning to get meaningful results.</p>
+<p>Lastly, unsupervised learning does not natively handle high-dimensional data, or massively large datasets with considerable variance, well. This is known as the curse of dimensionality. In some cases, the dimensions, or number of variables, may need to be reduced for it to work effectively. This requires human-intensive data cleansing.</p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Very fast to start</td>
+<td>Difficult to measure accuracy</td>
+</tr>
+<tr>
+<td>Disruptive insights</td>
+<td>Requires more experience</td>
+</tr>
+<tr>
+<td></td>
+<td>Curse of dimensionality</td>
+</tr>
+</tbody>
+</table>
+<h3 id="common-use-cases-for-unsupervised-algorithms">Common Use Cases for Unsupervised Algorithms</h3>
+<p>Let&#39;s take a look at a common use case example using cluster analysis. Cluster analysis has the goal of organizing raw data into related groups and is often used for anomaly detection.</p>
+<p>A security company uses it to identify unusual patterns in network traffic, indicating potential signs of a security breach or intrusion.</p>
+<p><img src="assets/image5.jpg" alt=""></p>
+<h4 id="unsupervised-learning-use-case-anomaly-detection">Unsupervised Learning Use Case – Anomaly Detection</h4>
+<p>Recall the steps of how this type of algorithm works.</p>
+<ul>
+<li>First, the security company streams in raw network traffic data.</li>
+<li>Next, the algorithm analyzes the data on its own and looks for unusual patterns.</li>
+<li>Then, it identifies patterns of behavior as either normal or suspect.</li>
+<li>When suspect behavior is identified, the output is provided and the company is notified.</li>
+</ul>
+<p>With this example using anomaly detection, a scatter plot may return results looking something like the image below. The green dots indicate behavior that is grouped together as normal, and the red dots show the potential outliers that are sent back as suspect.</p>
+<p><img src="assets/image14.jpg" alt=""></p>
+<p>This table depicts some unsupervised learning algorithms. The most common algorithm here is <em>k</em>-means, for cluster analysis, which is what we&#39;ve just focused on with our security use case example on anomaly detection.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Algorithm or Task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unsupervised</td>
+<td>_k_-Means: Cluster Analysis</td>
+</tr>
+<tr>
+<td>Unsupervised</td>
+<td>Association Rule Learning</td>
+</tr>
+<tr>
+<td>Unsupervised</td>
+<td>Dimensionality Reduction Techniques (PCA, SVD)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="semi-supervised-learning-defined">Semi-Supervised Learning: Defined</h2>
+<p>Semi-supervised learning includes a combination of supervised and unsupervised learning types together. Usually, this means that only a part of the provided input data is labeled, which the machine is trained on. It then learns to create additional labels and classifiers for raw data, on its own, which in turn gets added back to the original training data set.</p>
+<p><img src="assets/image6.jpg" alt=""></p>
+<h3 id="how-semi-unsupervised-learning-works">How Semi-Unsupervised Learning Works</h3>
+<p>As a combination of the previous two learning types, let&#39;s look at how a common self-training algorithm, from the semi-supervised learning method, works:</p>
+<ul>
+<li>First, an initial set of labeled input training data is loaded into the system.</li>
+<li>The model is trained on the data. Then, a new data set of unlabeled data is presented.</li>
+<li>The algorithm infers new labels and classifiers to apply to the new data. High-confidence data, or data that scores well based on the algorithm, is added back to the original labeled data set. From here, the machine progressively adapts and learns in an iterative process.</li>
+<li>In some cases, when the labels and the rule-based engine conflicts, a human is needed for verification.</li>
+</ul>
+<p><img src="assets/image15.jpg" alt=""></p>
+<h3 id="semi-supervised-algorithms-table">Semi-Supervised Algorithms Table</h3>
+<p>This table depicts some semi-supervised learning algorithms.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Algorithm or Task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Semi-Supervised</td>
+<td>Self-Training Algorithms</td>
+</tr>
+<tr>
+<td>Semi-Supervised</td>
+<td>Generative Model – Gaussian Mixture Model</td>
+</tr>
+<tr>
+<td>Semi-Supervised</td>
+<td>Graph-Based Algorithms – Label Propagation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="check-your-knowledge">Check your Knowledge</h2>
+<p>Classify the items listed below as a supervised, semi-supervised, or unsupervised learning method:</p>
+<p><img src="assets/image16.png" alt=""></p>
+<p>Answer Key:</p>
+<p>Works on both labeled data and raw data: Semi-supervised</p>
+<p>Easiest data preparation method: Unsupervised</p>
+<p>Only uses labeled input data: Supervised</p>
+<p>Infers patterns on its own: Unsupervised</p>
+<p>Output is predefined: Supervised</p>
+<p>Can be used to automate data labeling: Semi-supervised</p>
+<h2 id="more-resources-machine-learning-libraries">More Resources:  Machine Learning Libraries</h2>
+<p><img src="assets/image3.jpg" alt=""></p>
+<h2 id="where-do-we-go-from-here">Where do we go from here</h2>
+<p>Keep your eyes out for the next post in this series, discussing real world use cases for AI and ML.</p>
+
+          <!-- <div class="blog-item-tags" style="margin-top:15px">
+          	<p><b>Tags:</b></p>
+          </div> -->
+          <div id="date-container">
+            <h6>
+              <br>
+              This blog post was published September 28, 2018.
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-md-pull-9 non-stick" style="padding-top: 0px;">
+
+        <!-- Begin the search form -->
+        <form style="display: none;" id="body-search" action="/search/">
+          <input type="text" autocomplete="off" id="body-search-q" name="q" placeholder="Search " size="30" />
+          <input type="hidden" id="body-search-l" name="l" value="en" />
+          <input type="hidden" id="body-search-t" name="t" value="" />
+        	<input type="hidden" id="body-search-c" name="c" value="blog" />
+        </form>
+        
+        <div id="search-results" class="search-results" style="word-break: break-word;"></div>
+        
+        <!-- End the search form -->
+
+        <h6 class="categories">
+          Categories
+        </h6>
+        <div class="side-bar-list">
+          <a href="/blog/">All</a>
+                    <a href="/blog/apache-drill/">Apache Drill</a>
+                    <a href="/blog/apache-hadoop/">Apache Hadoop</a>
+                    <a href="/blog/apache-hive/">Apache Hive</a>
+                    <a href="/blog/apache-mesos/">Apache Mesos</a>
+                    <a href="/blog/apache-myriad/">Apache Myriad</a>
+                    <a href="/blog/apache-spark/">Apache Spark</a>
+                    <a href="/blog/cloud-computing/">Cloud Computing</a>
+                    <a href="/blog/enterprise-data-hub/">Enterprise Data Hub</a>
+                    <a href="/blog/machine-learning/">Machine Learning</a>
+                    <a href="/blog/mapr-platform/">MapR Platform</a>
+                    <a href="/blog/mapreduce/">MapReduce</a>
+                    <a href="/blog/nosql/">NoSQL</a>
+                    <a href="/blog/open-source-software/">Open Source Software</a>
+                    <a href="/blog/partners/">Partners</a>
+                    <a href="/blog/streaming/">Streaming</a>
+                    <a href="/blog/use-cases/">Use Cases</a>
+                    <a href="/blog/whiteboard-walkthrough-videos/">Whiteboard Walkthrough Videos</a>
+        </div>
+
+        <style>
+        /*Marketo form style override stuff*/
+        .marketo-form {
+          background-color: #7594B3;
+          padding: 20px 20px 1px 20px;
+          text-align: center;
+        	max-width: 300px;
+        	margin-left: auto;
+        	margin-right: auto;
+        }
+        .marketo-form h2 {
+          font-weight: 100;
+        }
+        .marketo-form p {
+          color: white;
+        }
+        .marketo-form .mktoForm, .marketo-form .mktoFormRow, .marketo-form .mktoFormCol, .marketo-form .mktoFieldWrap, .marketo-form .mktoField, .marketo-form .mktoButtonRow, .marketo-form .mktoButton {
+          width: 100% !important;
+        }
+        .marketo-form .mktoOffset, .marketo-form .mktoGutter, .marketo-form .mktoAsterix {
+          display: none !important;
+        }
+        
+        .marketo-form .mktoButton {
+          font-size: 20px !important;
+          border-radius: 0px !important;
+          text-shadow: none !important;
+          color: #C60C30 !important;
+          border: 0px !important;
+        }
+        .mktoForm .mktoButtonWrap.mktoDownloadButton .mktoButton {
+          background-color: white !important;
+        }
+        .mktoButtonWrap {
+          margin-left: 0px !important;
+        }
+        .marketo-form .mktoDownloadButton {
+          margin: 0px !important;
+        }
+        select#Country {
+            -webkit-appearance: menulist;
+        }
+        input#mktoCheckbox_1922_0 {
+            width: 30px !important;
+            -webkit-appearance: checkbox;
+        }
+        /* Form stickiness */
+        
+        @media only screen and (min-width: 992px) {
+         .row-stick{
+           display: flex;
+         }
+         .stick{
+         	position: sticky;
+          top: 15px;
+         }
+         .non-stick{
+         	float: none;
+          display: table-cell;
+          vertical-align: top;
+         }
+        }
+        </style>
+        
+        
+        <div name="blog-subscribe" class="marketo-form stick">
+          <h2><strong>50,000+ of the smartest</strong> have already joined!</h2>
+          <p>Stay ahead of the bleeding edge...get the best of Big Data in your inbox.</p>
+          <br>
+          <script src="//app-sj24.marketo.com/js/forms2/js/forms2.min.js"></script>
+          <form id="mktoForm_1096"></form>
+          <script>MktoForms2.loadForm("//app-sj24.marketo.com", "846-BMC-777", 1096, function(form){
+        
+          //Add an onSuccess handler
+            form.onSuccess(function(values){
+               // Push GTM event
+               window.dataLayer = window.dataLayer || [];
+               dataLayer.push({'event':'Conversion'});
+            });
+          });</script>
+        </div>
+
+      </div>
+
+      <!-- <link rel="stylesheet" href="/assets/css/addons/blog-side-promo.css">
+<script type="text/javascript" src="/assets/javascript/blog-site-promo-swap.js"></script>
+
+<div class="col-md-3 col-lg-3 col-xl-offset-1 asset-promo">
+    <div>
+    <a id="eBook-landingPage" href="">
+    <img id="eBook-cover" src="">
+    <h3 class="btn-red">Get the New eBook!</h3></a>
+    <a id="chapterLink" href="" name=""><p><span id="chapter"></span><span id="chapter-title"><span></p>
+    <p id="chapter-description"></p></a>
+  </div>
+</div>
+ -->
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="disqus_thread"></div>
+        <script>
+          var disqus_config = function () {
+            this.page.url = 'https://mapr.com/blog/types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series/';
+            this.page.identifier = 'types-of-machine-learning-part-2-in-the-intro-to-ai-ml-series';
+          };
+          (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://maprblog.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/*Social icons test stuff*/
+div#social-container {
+    padding: 0px;
+    margin: 0px;
+}
+.icons {
+  width: 95px;
+}
+.icons:hover {
+    opacity: .8;
+}
+.icons p {
+  float: right;
+  line-height: 1.4;
+  color: white;
+  padding: 0px 6px;
+}
+.icon-list {
+  margin: 2rem auto;
+  margin-top: 1rem;
+}
+.icon-list li:first-child {
+  margin-left: 0px;
+}
+
+/*white blog post content background*/
+.bg-white {
+  background-color: white;
+}
+
+/*top date and author info section*/
+#contributors-container {
+  float: right;
+  padding-top: 6px;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#contributors-container h6 {
+  /*padding-left: 20px;*/
+}
+
+#contributors-container .media
+{
+    padding-left: 20px;
+}
+.contributor-block a {
+  display: initial;
+}
+.contributor-block img {
+  max-height: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.blog-item-tags
+{
+    margin-top: 15px;
+    border-top: 1px solid #eaeaea;
+    background-color: #eee;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.blog-item-tag
+{
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 5px 5px 10px;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.blog-item-tag:last-of-type {
+    margin-right: 0;
+}
+
+.blog-item-tag::after
+{
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136,183,213,0);
+    border-left-color: #ffffff;
+    border-width: 16px;
+    margin-top: -16px;
+}
+
+    .blog-item-tag a{
+        font-size: 14px;
+    }
+</style>
+
+
+<section class="mod-6-2-sign-off-with-2ctas">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>Get our latest posts in your inbox</h2>
+        <a href="#blog-subscribe">Subscribe Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="get-started">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 title">
+				<h3>GET STARTED</h3>
+			</div>
+			<div class="col-sm-2 info">
+				<a href="/company/contact-mapr/#contact-us">
+					<img src="/assets/images/icons/icon-footer-email.png" alt="Email">
+					<p>Email Us</p>
+				</a>
+			</div>
+			<div class="col-sm-2 info">
+				<a href="tel:8556696277">
+					<img src="/assets/images/icons/icon-footer-phone.png" alt="Phone">
+					<p>+1 855-NOW-MAPR</p>
+				</a>
+			</div>
+			<div class="col-sm-2 info">
+				<a href="/try-mapr/">
+					<img src="/assets/images/icons/icon-footer-download.png" alt="Download">
+					<p>Download MapR for Free</p>
+				</a>
+			</div>
+			<div class="col-sm-2 info">
+				<a href="/demo/">
+					<img src="/assets/images/icons/footer-demo-icon.png" alt="Demo">
+					<p>Request a Demo</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<svg height="30" width="100%" viewBox="0 0 50 100" preserveAspectRatio="none">
+	<defs>
+	<linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+	  <stop offset="0%" stop-color="#057778"></stop>
+	  <stop offset="100%" stop-color="#176ab4"></stop>
+	</linearGradient>
+	</defs>
+	<rect x="0" y="80" width="100%" height="90" fill="url(#linear)"></rect>
+	</svg>
+</section>
+<!-- <script src="/assets/javascript/announcement-banner.js"></script>
+
+<section id="announcement-banner" class="container closed">
+	<div class="">
+		<div class="col-md-12">
+			<div class="content">
+        <button id="btn-link" onclick="closeBanner('announcement-banner')" class="close-button">✕</button>
+				<div class="image-holder">
+					<a id="img-link" href="/training/on-demand/bus-application-containers-and-kubernetes/?source=8.13.18_REG-siteBanner"><img src="/offers/2018/training/containers-kubernetes/assets/containers-kubernetes-1.jpg"></a>
+				</div>
+				<div class="copy-holder">
+					<p>NOW AVAILABLE - <b>NEW FREE COURSE:</b></p>
+					<h3>Application Containers and Kubernetes</h3>
+				</div>
+				<div class="cta-holder">
+					<a id="cta-link" href="/training/on-demand/bus-application-containers-and-kubernetes/?source=8.13.18_REG-siteBanner">Register Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+ -->
+<footer id="footer" class="mod-1-4-footer">
+  <div class="container">
+    <div class="row footer-subnav">
+      <div class="col-xs-6 col-sm-4">
+        <a id="footernav-whymapr" href="/why-mapr/"><h6>Why MapR?</h6></a>
+        <a id="footernav-customers" href="/customers/">Customers</a>
+        <a id="footernav-solutions" href="/solutions/">Solutions</a>
+        <a id="footernav-productsservices" href="/products/">Products</a>
+        <a id="footernav-productsservices" href="/services/">Services</a>
+        <a id="footernav-training" href="/training/">Training</a>
+        <!-- <a id="footernav-blog" href="/blog/">Blog</a> -->
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <a id="footernav-company" href="/company/"><h6>Company</h6></a>
+        <span>
+          <a id="footernav-press" style="display: inline;" href="/company/press-releases/">Press</a>
+           |
+          <a id="footernav-news" style="display: inline;" href="/company/news/">News</a>
+        </span>
+        <a id="footernav-leadership" href="/company/leadership/">Leadership</a>
+        <a id="footernav-investors" href="/company/investors/">Investors</a>
+        <a id="footernav-partners" href="/reseller/">Resellers</a>
+        <a id="footernav-partners" href="/partners/">Partners</a>
+        <a id="footernav-careers" href="/careers/">Careers</a>
+        <a id="footernav-awards" href="/company/awards/">Awards</a>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <a id="footernav-contactus" href="/company/contact-mapr/"><h6>Contact Us</h6></a>
+        <a id="footernav-email" href="mailto:sales@mapr.com"><p>
+          Contact Sales <img class="icon-tiny" src="/assets/images/icons/icon_talkBubble.svg" alt="email MapR Sales">
+        </p></a>
+        <a id="footernav-ustel" href="tel:4089142390"><p>
+          United States: +1 408-914-2390
+        </p></a>
+        <a id="footernav-inttel" href="tel:8556696277"><p>
+          Outside the US: +1 855-NOW-MAPR
+        </p></a>
+        <a id="footernav-legal" href="/legal/"><h6>
+          Legal
+        </h6></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-sm-push-8 col-md-4 col-md-push-8">
+        <div class="social-wrap">
+          <a id="footernav-linkedin" href="https://www.linkedin.com/company/mapr-technologies" target="_blank">
+            <img src="/assets/images/social/social_linkedIn.svg" alt="MapR LinkedIn">
+          </a>
+          <a id="footernav-facebook" href="https://www.facebook.com/maprtech/" target="_blank">
+            <img src="/assets/images/social/social_facebook.svg" alt="MapR Facebook">
+          </a>
+          <a id="footernav-twitter" href="https://twitter.com/mapr" target="_blank">
+            <img src="/assets/images/social/social_twitter.svg" alt="MapR Twitter">
+          </a>
+          <a id="footernav-youtube" href="https://www.youtube.com/user/maprtech" target="_blank">
+            <img src="/assets/images/social/social_youTube.svg" alt="MapR YouTube">
+          </a>
+          <a id="footernav-emailbtn" href="/company/contact-mapr/">
+            <img src="/assets/images/social/social_email.svg" alt="ContactMapR">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-8 col-sm-pull-4 col-md-8 col-md-pull-4">
+        <p class="copyright">
+          © 2019 MapR Technologies, Inc. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <div id="bottom_scripts">
+      <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-auth-js/1.5.0/OktaAuth.min.js" type="text/javascript"></script>
+      <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.8.0/js/okta-sign-in.min.js" type="text/javascript"></script>
+      <script src="/assets/js/main.js"></script>
+
+      <script type="text/javascript">
+      var scroll_offset = 40;
+      $("a[href^='#']").click(function (e) {
+          e.preventDefault();
+          var id = $.attr(this, 'href').substr(1);
+          $('html, body').animate({
+              scrollTop: $('[name="' + id + '"], [id="' + id + '"]').offset().top - scroll_offset
+          }, 500);
+          return false;
+      })
+      </script>
+      </script>
+    </div>
+
+</body>
+</html>

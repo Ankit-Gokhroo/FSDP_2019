@@ -1,0 +1,66 @@
+﻿
+
+Q. (Create a program that fulfills the following specification.)
+Female_Stats.Csv
+
+Female Stat Students
+
+ 
+
+Import The Female_Stats.Csv File
+
+The Data Are From N = 214 Females In Statistics Classes At The University Of California At Davi.
+
+Column1 = Student’s Self-Reported Height,
+
+Column2 = Student’s Guess At Her Mother’s Height, And
+
+Column 3 = Student’s Guess At Her Father’s Height. All Heights Are In Inches.
+
+ 
+
+Build A Predictive Model And Conclude If Both Predictors (Independent Variables) Are Significant For A Students’ Height Or Not
+When Father’s Height Is Held Constant, The Average Student Height Increases By How Many Inches For Each One-Inch Increase In Mother’s Height.
+When Mother’s Height Is Held Constant, The Average Student Height Increases By How Many Inches For Each One-Inch Increase In Father’s Height.
+
+
+
+
+Q. (Create a program that fulfills the following specification.)
+bluegills.csv
+
+How is the length of a bluegill fish related to its age?
+
+In 1981, n = 78 bluegills were randomly sampled from Lake Mary in Minnesota. The researchers (Cook and Weisberg, 1999) measured and recorded the following data (Import bluegills.csv File)
+
+Response variable(Dependent): length (in mm) of the fish
+
+Potential Predictor (Independent Variable): age (in years) of the fish
+
+    How is the length of a bluegill fish best related to its age? (Linear/Quadratic nature?)
+    What is the length of a randomly selected five-year-old bluegill fish? Perform polynomial regression on the dataset.
+
+NOTE: Observe that 80.1% of the variation in the length of bluegill fish is reduced by taking into account a quadratic function of the age of the fish.
+
+
+Q. (Create a program that fulfills the following specification.)
+iq_size.csv
+
+Are a person's brain size and body size (Height and weight) predictive of his or her intelligence?
+
+ 
+
+Import the iq_size.csv file
+
+It Contains the details of 38 students, where
+
+Column 1: The intelligence (PIQ) of students
+
+Column 2:  The brain size (MRI) of students (given as count/10,000).
+
+Column 3: The height (Height) of students (inches)
+
+Column 4: The weight (Weight) of student (pounds)
+
+    What is the IQ of an individual with a given brain size of 90, height of 70 inches, and weight 150 pounds ? 
+    Build an optimal model and conclude which is more useful in predicting intelligence Height, Weight or brain size.
