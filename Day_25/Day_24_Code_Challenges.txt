@@ -1,0 +1,33 @@
+
+Q1. (Create a program that fulfills the following specification.)
+
+Import Crime.csv File.
+
+    Perform dimension reduction and group the cities using k-means based on Rape, Murder and assault predictors.
+
+
+
+Q2. (Create a program that fulfills the following specification.)
+
+The iris data set consists of 50 samples from each of three species of Iris flower (Iris setosa, Iris virginica and Iris versicolor).
+
+    Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres (iris.data).
+    Import the iris dataset already in sklearn module using the following command:\
+
+
+from sklearn.datasets import load_iris
+iris = load_iris()
+iris=iris.data
+
+
+Reduce dimension from 4-d to 2-d and perform clustering to distinguish the 3 species.
+
+Q3. """Code Challenge -
+Data: "data.csv"
+
+This data is provided by The Metropolitan Museum of Art Open Access
+1. Visualize the various countries from where the artworks are coming.
+2. Visualize the top 2 classification for the artworks
+3. Visualize the artist interested in the artworks
+4. Visualize the top 2 culture for the artworks
+"""
